@@ -1,0 +1,370 @@
+@import "reset.css";
+@import "color.css";
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600&display=swap');
+
+
+
+/* This is a header part */
+header{
+    min-height: 80px;
+    background-color: var(--header);
+    box-shadow: 5px 5px 5px var(--shadow);
+}
+
+
+/* This is logo part */
+header h1.logo{
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Heebo;
+    text-transform: capitalize;
+}
+
+
+
+/* This is navbar part */
+header .navigation{
+    height: 80px;
+}
+
+header nav ul li{
+    margin: 0 15px;
+    display: inline-block;
+}
+
+
+header nav ul li a{
+    font-size: 16px;
+    color: var(--nav);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+
+/* This is hero part */
+div.hero img{
+    max-width: 100%;
+}
+
+
+
+/* This is about part */
+section .about-info h2{
+    font-family: Heebo;
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+
+section .about-info span{
+    font-family: Heebo;
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: var(--green);
+}
+
+
+
+section .about-info span::after{
+    content: "";
+    height: 3px;
+    width: 100px;
+    display: block;
+    margin-bottom: 30px;
+    background-color: var(--green);
+}
+
+
+
+section .about-info p.first{
+    font-size: 17px;
+    text-align: justify;
+    color: var(--shadow);
+    margin-bottom: 35px;
+    line-height: 25px;
+    font-family: Heebo;
+    padding-right: 30px;
+    letter-spacing: 0.25px;
+}
+
+
+section .about-info p.second{
+    font-size: 17px;
+    text-align: justify;
+    color: var(--shadow);
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-family: Heebo;
+    padding-right: 30px;
+    letter-spacing: 0.25px;
+}
+
+
+
+section .about-info .btn{
+    border: none;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: var(--green);
+}
+
+
+section .about-info .btn:hover{
+    background-color: var(--btnhover);
+}
+
+
+
+section .about-image{
+    margin-bottom: 20px;
+}
+
+
+section .about-image img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+section .about-inform h2{
+    color: var(--black);
+    font-size: 22px;
+    font-family: Heebo;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+section .about-inform p{
+    font-size: 17px;
+    text-align: justify;
+    color: var(--shadow);
+    margin-bottom: 35px;
+    line-height: 25px;
+    font-family: Heebo;
+    letter-spacing: 0.25px;
+}
+
+
+/* This is service part */
+section.service-section{
+    background-color: var(--green);
+}
+
+
+
+section.service-section h2.service-heading{
+    color: var(--header);
+    font-family: Heebo;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+}
+
+
+
+
+section.service-section h2::after{
+    display: block;
+    height: 3px;
+    content: "";
+    width: 100px;
+    margin: 15px auto;
+    background-color: var(--header);
+}
+
+
+
+section.service-section p{
+    color: var(--header);
+    font-family: Heebo;
+    line-height: 1px;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 0.25px;
+}
+
+
+section.service-section .service-box{
+    text-align: center;
+    padding: 10vh 0;
+    min-height: 50vh;
+}
+
+
+section.service-section .service-box img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+section.service-section .service-box h3{
+    color: var(--header);
+    font-size: 25px;
+    font-family: Heebo;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+
+
+section.service-section .service-box p{
+    color: var(--header);
+    text-align: center;
+}
+
+
+
+/* This is gallery part */
+#gallery-container .gallery-title h2{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+
+
+#gallery-container .gallery-title h2::after{
+    display: block;
+    margin: 15px auto;
+    height: 3px;
+    width: 100px;
+    content: "";
+    background-color: var(--green);
+}
+
+
+
+
+#gallery-container .gallery-title p{
+    margin-bottom: 50px;
+}
+
+
+
+#gallery-container .gallery-image img{
+   width: 100%;
+   height: auto;
+   padding: 10px 0;
+}
+
+
+
+
+/* This is testimonial part */
+.testimonial{
+    background-color: var(--green);
+}
+
+.testimonial .testimonial-title{
+    text-align: center;
+}
+
+
+
+.testimonial .testimonial-title h2{
+    color: var(--header);
+    text-transform: capitalize;
+}
+
+
+
+.testimonial .testimonial-title h2::after{
+    display: block;
+    margin: 15px auto;
+    height: 3px;
+    width: 100px;
+    content: "";
+    background-color: var(--header);
+}
+
+
+
+.testimonial .testimonial-title p{
+    color: var(--header);
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+
+
+.testimonial .testimonial-content{
+    text-align: center;
+}
+
+
+.testimonial .testimonial-content img{
+    margin-bottom: 20px;
+}
+
+
+
+.testimonial .testimonial-content .name{
+    text-transform: uppercase;
+    color: var(--header);
+    margin-bottom: 20px;
+}
+
+
+
+.testimonial .testimonial-content p{
+    color: var(--header);
+    text-align: center;
+    padding: 0 25vw;
+    margin-bottom: 20px;
+}
+
+
+
+.testimonial .circle i{
+    color: var(--green);
+}
+
+
+
+/* This is contact part */
+
+section h3.contact-title{
+    font-size: 40px;
+    font-family: Heebo;
+    text-transform: capitalize;
+}
+
+
+
+section h3.contact-title::after{
+    display: block;
+    margin: 15px auto;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: var(--green);
+}
+
+
+
+/* This is footer part */
+footer{
+    height: 150px;
+    color: white;
+    background-color: var(--black);
+}
