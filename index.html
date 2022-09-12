@@ -7,28 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landscaper-Home</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/c39583f05c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- This is header part -->
-    <header class="fixed-top">
+    <header>
         <div class="container">
             <div class="row">
                 <!-- This is logo part -->
-                <div class="col-sm-4 d-flex align-items-center">
+                <div class="col-md-4" id="logo-container">
                     <h1 class="logo">landscaper</h1>
                 </div>
 
                 <!-- This is navbar part -->
-                <div class="col-md-8 navigation d-flex align-items-center justify-content-end">
+                <div class="col-md-8">
                     <nav>
                         <ul>
                             <li><a href="#">about</a></li>
                             <li><a href="#">services</a></li>
                             <li><a href="#">gallary</a></li>
-                            <li><a href="#">testimonials</a></li>
                             <li><a href="#">contact</a></li>
                         </ul>
                     </nav>
@@ -38,6 +37,7 @@
     </header>
 
 
+
     <!-- This is hero part -->
     <div class="container-fluid">
         <div class="row">
@@ -45,6 +45,14 @@
                 <div class="hero">
                     <img src="assets/intro-bg.jpg" alt="Hero-Image">
                 </div>
+            </div>
+        </div>
+
+        <div class="hero-cover-layer">
+            <div class="hero-cover-layer-container">
+                <h1>landscaping services</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                <button>more info</button>
             </div>
         </div>
     </div>
@@ -109,7 +117,7 @@
                     <div class="service-box">
                         <img src="assets/services/service-1.jpg" alt="service-image" class="img-fluid">
                         <h3>Heading</h3>
-                        <p>text</p>
+                        <p class="service-below-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, vitae?</p>
                     </div>
                 </div>
 
@@ -268,7 +276,7 @@
 
                 <div class="col-md-4 text-center">
                     <ul>
-                        <li>Address</li>
+                        <li class="header">Address</li>
                         <li>4321 California St,</li>
                         <li>San Hrancisco, CA 12345</li>
                     </ul>
@@ -277,7 +285,7 @@
 
                 <div class="col-md-4 text-center">
                     <ul>
-                        <li>wroking-hour</li>
+                        <li class="header">wroking-hour</li>
                         <li>Monday Sunday 07:00-18:00</li>
                         <li>Sunday : CLOSED</li>
                     </ul>
@@ -286,20 +294,20 @@
 
                 <div class="col-md-4 text-center">
                     <ul>
-                        <li>Contact Into</li>
+                        <li class="header">Contact Into</li>
                         <li>Phone : +1 123 456 1234</li>
                         <li>Email : info@company.com</li>
                     </ul>
                 </div>
 
 
-                <div class="col-md-12 text-center mt-5">
+                <div class="col-md-12 text-center mt-5" id="contact-form">
                     <h3>leave us a message</h3>
-                    <form action="#">
-                        <input type="text">
-                        <input type="email"><br><br>
-                        <textarea></textarea><br><br>
-                        <input type="button" value="send message">
+                    <form>
+                        <input type="text" class="col-md-6 form-control">
+                        <input type="email" class="col-md-6 form-control">
+                        <textarea class="form-control" placeholder="Message"></textarea><br><br>
+                        <input type="button"  value="send message">
                     </form>
                 </div>
             </div>
@@ -310,7 +318,7 @@
     <!-- This is footer part -->
     <footer>
         <div class="container">
-            <div class="row">
+            <div class="row d-flex align-items-center" id="footer-container">
                 <div class="col-md-12 text-center">
                     facebook
                     instagram
@@ -320,7 +328,6 @@
                 <div class="col-md-12 text-center">
                     <p class="footer-text">&copy 2022 Landscaper. Designed by <b>Deepak</b></p>
                 </div>
-
             </div>
         </div>
     </footer>

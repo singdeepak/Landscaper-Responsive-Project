@@ -1,0 +1,66 @@
+@media screen and (max-width: 767px){
+    header #logo-container{
+        height: 30px;
+        justify-content: center;
+    }
+
+    header nav{
+        height: 30px;
+    }
+
+
+    section.service-section .service-box img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    section.service-section .service-box p {
+        font-size: 5px;
+        
+        padding-bottom: 50px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 575px){
+    .hero-cover-layer{
+        display: flex !important;
+        align-items: flex-start;
+    }
+
+
+    .hero-cover-layer-container h1{
+        font-size: 15px;
+        margin-bottom: 0 !important;
+    }
+
+
+    .hero-cover-layer-container p{
+        font-size: 10px;
+        padding-bottom: 50px !important;
+    }
+
+    .hero-cover-layer-container button{
+        font-size: 10px;
+        display: none;
+    }
+
+    .testimonial .testimonial-content p{
+        text-align: left !important;
+        padding: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+
+    .testimonial .testimonial-title p{
+        font-size: 14px !important;
+    }
+
+
+    section.service-section .service-box img{
+        width: 300px !important;
+        height: 300px !important;
+    }    
+
+}

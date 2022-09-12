@@ -7,15 +7,27 @@
 /* This is a header part */
 header{
     min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
     background-color: var(--header);
     box-shadow: 5px 5px 5px var(--shadow);
 }
 
 
 /* This is logo part */
+header #logo-container{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+
 header h1.logo{
     color: var(--black);
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 600;
     font-family: Heebo;
     text-transform: capitalize;
@@ -23,9 +35,13 @@ header h1.logo{
 
 
 
+
 /* This is navbar part */
-header .navigation{
+header nav{
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header nav ul li{
@@ -44,8 +60,63 @@ header nav ul li a{
 
 
 /* This is hero part */
+div.hero{
+    position: relative;
+}
+
+
+
 div.hero img{
     max-width: 100%;
+    height: 100%;
+}
+
+
+.hero-cover-layer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.hero-cover-layer-container h1{
+    color: var(--header);
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: Heebo;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.hero-cover-layer-container p{
+    color: var(--shadow);
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+}
+
+
+.hero-cover-layer-container button:hover{
+    background-color: var(--btnhover);
+}
+
+
+
+.hero-cover-layer-container button{
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: var(--green);
 }
 
 
@@ -114,6 +185,7 @@ section .about-info .btn{
     font-size: 13px;
     font-weight: 400;
     padding: 10px 20px;
+    margin-bottom: 50px;
     text-transform: uppercase;
     background-color: var(--green);
 }
@@ -226,12 +298,6 @@ section.service-section .service-box h3{
     text-transform: capitalize;
 }
 
-
-
-section.service-section .service-box p{
-    color: var(--header);
-    text-align: center;
-}
 
 
 
@@ -357,14 +423,72 @@ section h3.contact-title::after{
     content: "";
     width: 100px;
     height: 3px;
+    background-color: var(--black);
+}
+
+
+
+li.header{
+    margin-bottom: 10px;
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+section ul li:not(:first-of-type){
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+
+#contact-form h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+
+#contact-form form textarea{
+    resize: none;
+    height: 40vh;
+}
+
+
+#contact-form form input[type=button]{
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 15px 30px;
+    color: var(--header);
+    text-transform: uppercase;
     background-color: var(--green);
 }
+
+
+#contact-form form input[type=button]:hover{
+    background-color: var(--btnhover);
+}
+
+
 
 
 
 /* This is footer part */
 footer{
-    height: 150px;
     color: white;
+    height: 25vh;
     background-color: var(--black);
+}
+
+
+
+#footer-container{
+   height: 25vh
 }
